@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Jogador</title>
+<link rel="stylesheet" href="estilo.css" >
+</head>
+<script src="javaScript.js"></script>
+<body>
+<h1>Formulario de Jogador</h1>
+<p class="txtNotificaçao">NOTA: Preecha corretamente para facilita sua entrada em cla , caso não tenha um.</p>
+<main>
+<form id="forma">
+<fieldset>
+<legend><p>ESPECIFICAÇÕES DO JOGADOR</p></legend>
+
+<p> Qual o seu nivel: <input type="Number"  id="cNivel" placeholder="Seu nivel maximo"></p>
+<p>Nivel de Centro de vila: <input type="Number"  placeholder="Qual seu cv" id="tNivel"> </p>
+<p> Sua Tag: <input type="Number" placeholder="Sua tag completa"></p>
+<fieldset><legend>Possui Cla:</legend>
+<label for="comCla">SIM:</label>
+<input type="radio" id="comCla" name="scla" >
+
+<label for="semCla"> NÃO:</label>
+<input type="radio" id="semCla"  name="scla"  >
+
+</fieldset>
+</fieldset><!--Especificações do jogador niveis,tag,e tem um cla-->
+
+
+<br>
+<fieldset><legend> SEU CLA</legend>
+
+<p>Numero de integrantes: 1<input type="range" mix="0" max="50" step="1">50</p>
+
+<p> <label id=" fGuerra">Frequência de Guerra:</label><select>
+<optgroup>
+<option value="Sempre">Sempre</option>
+<option value="nunca">nunca</option>
+<option value="raramente">raramente</option>
+<option value="duasSemana" >Duas vez por semana</option>
+<option value="umaSemana">Uma vez por semana</option>
+</optgroup>
+
+</select></p> 
+
+<p><label for="local">Localização do cla:</label><select>
+<optgroup>
+<option value="qQuer">Qualquer</option>
+<option value="Inter">internacional</option>
+<option value="BR">Brasil</option>
+<option value="CN">canada</option>
+<option value="PT">Portugal</option>
+<option value="CH">China</option>
+<option value="CL">Chile</option>
+<option value="CM">Comoros</option>
+<option value="CN">Cango(DRG)</option>
+</optgroup>
+</select>
+</p>
+
+<p>Nivel de trofeus: 0 <input type="range" min="0" max="50000" step="10" id="selecao" onscroll="selecao()">50000</p> 
+<fieldset><legend>Categoria  do clã</legend>
+<p><input type="radio" id="gcla">Guerra de Clãs</p> 
+<p><input type="radio" id="gcla">Liga das Guerras de clãs</p>
+<p><input type="radio" id="gcla">Jogos de clãs</p>
+<p><input type="radio" id="gcla">Base do construtor</p>
+<p><input type="radio" id="gcla">Planejamento de bases</p>
+<p><input type="radio" id="gcla">Foco em trofeus</p>
+<p><input type="radio" id="gcla">Acúmlo de recursos</p>
+<p><input type="radio" id="gcla">Doações</p>
+<p><input type="radio" id="gcla">internacional</p>
+<!--<p id="saida">TAGS SELECIONADAS:0 de 3  </p>-->
+
+</fieldset>
+</fieldset><!--Descrição do cla-->
+
+
+
+<fieldset><legend>CAPITAL DO CLÃ</legend>
+<p><label>Qual o nivel do capitolio: </label><select><optgroup>
+<option value="nUm">1</option>
+<option value="nDois">2</option>
+<option value="nTres">3</option>
+<option value="nQuat">4</option>
+</optgroup></select></p>
+</fieldset>
+</form>
+
+<button id="button" onclick="btt()">salvar</button>
+
+</main>
+</body>
+</html>
