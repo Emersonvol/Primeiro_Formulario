@@ -1,35 +1,86 @@
-body{
-    margin:0px;
-    background-color: rgb(233, 132, 243);
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+margin: 0;
+padding: 0;
 }
+:root{
+    --cores:#070757;
+    --fundo:#8ac6dc;
+    --texto:center;
+    --tamanho: 50em;
+    --borda:10px;
+    --bordaFild:1px solid black;
+}
+.exp-jogador ,.scClas,.cpEspecificoes{
+text-align: var(--texto);
+background-color: var(--fundo);
+width: var(--tamanho);
+margin-left:33em;
+margin-top:.2em;
+border-radius:var(--borda);
+}
+.scClas{
+    background-color: #a4e5e8;
+    }
+    .cpEspecificoes{
+    background-color: #dce8a4;
 
-form{
-    position: relative;
-    width: 500px;
-    left: 410px;
-    margin:0px;
-    background-color: rgba(160, 109, 232, 0.404);
-    border: 1px solid rgba(178, 89, 223, 0.363);
-    border-radius: 3px;
+    }
+.exp-jogador p , .scClas p,.cpEspecificoes p{
+    text-align: left;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
 }
-h1{
-    position: relative;
-    left: 490px;
-    margin-right:940px ;
-    font-family: fantasy;
-    
+.exp-jogador h1 {
+   font-family: 'Fasthand', cursive; 
+   font-size: 5em;
+   color: var(--cores)
 }
-    
+legend{
+    color: #fd064c;
+    border: var( --bordaFild);
+    border-radius:var(--borda);
+}
+fieldset{
+    border: var( --bordaFild);
+    border-radius:var(--borda);
 
-
-p.txtNotificaçao{
-    position: relative;
-    left: 400px;
-    margin-right:700px ;
 }
-button{
+textarea{
     position: absolute;
-    left: 600px;
-    padding:10px 25px 10px 25px;
-   
+    
+}
+.radioSiNO{
+    position: relative;
+    top:-1.2em;
+    right: 10.5em;
+    font-size: 1.4em;
+    color: #0654fd;
+}
+
+.btnBotao{
+    position: relative;
+    width: 400px;
+    height:50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #fefefe;
+    background-color: #2c48e8;
+    left: 25em;
+    font-family: 'Playfair Display', serif;
+    border: none;
+    border-radius: 10px;
+    transition: .5s;
+}
+.btnBotao:hover{
+    background-color: #919ee5;
+    cursor: pointer;
+
+}
+.btnBotao:active{
+    background-color: #38f604;
+    cursor: pointer;
 }
