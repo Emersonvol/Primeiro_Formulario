@@ -7,47 +7,46 @@
 <title>Formulario de Jogador</title>
 <link rel="stylesheet" href="estilo.css" >
 </head>
-<script src="javaScript.js"></script>
+
 <body>
+<header class="exp-jogador"> 
 <h1>Formulario de Jogador</h1>
-<p class="txtNotificaçao">NOTA: Preecha corretamente para facilita sua entrada em cla , caso não tenha um.</p>
+<p class="txtNotificaçao">NOTA: Preecha corretamente para facilita sua entrada em clas, caso não tenha um.</p>
 <main>
 <form id="forma" action="#" method="post">
 <fieldset>
-<legend><p>ESPECIFICAÇÕES DO JOGADOR</p></legend>
+<legend ><p>ESPECIFICAÇÕES DO JOGADOR</p></legend>
 
-<p> Qual o seu nivel: <input type="Number"  id="cNivel" placeholder="Seu nivel maximo"></p>
-<p>Nivel de Centro de vila: <input type="Number"  placeholder="Qual seu cv" id="tNivel"> </p>
-<p> Sua Tag: <input type="Number" placeholder="Sua tag completa"></p>
-<fieldset><legend>Possui Cla:</legend>
-<label for="comCla">SIM:</label>
+
+<p>Nivel de Centro de vila: <input type="Number" min='1'max='15'  placeholder="Qual seu cv" id="tNivel"> </p>
+<p> Qual o seu nivel: <input type="Number" min="1" max="999" id="cNivel" placeholder="Seu nivel maximo"></p>
+<p> Sua Tag: <input type="Number" min="1" max="9999999" placeholder="Sua tag completa"></p>
+
+<p>Possui Cla:</p> 
+<div class="radioSiNO"><label for="comCla">SIM:</label>
 <input type="radio" id="comCla" name="scla" >
-
 <label for="semCla"> NÃO:</label>
-<input type="radio" id="semCla"  name="scla"  >
-
-</fieldset>
+<input type="radio" id="semCla"  name="scla" >
+</div>
+<p>O que procura:<textarea placeholder="Descreva o que voce procura em cla..."  rows="2" cols="80" ></textarea></p> 
 </fieldset><!--Especificações do jogador niveis,tag,e tem um cla-->
+</header>
 
-
-<br>
-<fieldset><legend> SEU CLA</legend>
-
+<section class="scClas">
+<fieldset><legend> <p> SEU CLA </p></legend>
 <p>Numero de integrantes: 1<input type="range" mix="0" max="50" step="1">50</p>
-
 <p> <label id=" fGuerra">Frequência de Guerra:</label><select>
-<optgroup>
+<optgroup label="Frequência">
 <option value="Sempre">Sempre</option>
 <option value="nunca">nunca</option>
 <option value="raramente">raramente</option>
 <option value="duasSemana" >Duas vez por semana</option>
 <option value="umaSemana">Uma vez por semana</option>
 </optgroup>
-
 </select></p> 
 
 <p><label for="local">Localização do cla:</label><select>
-<optgroup>
+<optgroup label="Localização">
 <option value="qQuer">Qualquer</option>
 <option value="Inter">internacional</option>
 <option value="BR">Brasil</option>
@@ -62,7 +61,7 @@
 </p>
 
 <p>Nivel de trofeus: 0 <input type="range" min="0" max="50000" step="10" id="selecao" onscroll="selecao()">50000</p> 
-<fieldset><legend>Categoria  do clã</legend>
+<fieldset><legend><p>Categoria  do clã</p></legend>
 <p><input type="radio" id="gcla">Guerra de Clãs</p> 
 <p><input type="radio" id="gcla">Liga das Guerras de clãs</p>
 <p><input type="radio" id="gcla">Jogos de clãs</p>
@@ -73,24 +72,42 @@
 <p><input type="radio" id="gcla">Doações</p>
 <p><input type="radio" id="gcla">internacional</p>
 <!--<p id="saida">TAGS SELECIONADAS:0 de 3  </p>-->
-
 </fieldset>
 </fieldset><!--Descrição do cla-->
+</section>
 
-
-
-<fieldset><legend>CAPITAL DO CLÃ</legend>
-<p><label>Qual o nivel do capitolio: </label><select><optgroup>
-<option value="nUm">1</option>
-<option value="nDois">2</option>
-<option value="nTres">3</option>
-<option value="nQuat">4</option>
+<footer class="cpEspecificoes">
+<fieldset><legend><p>CAPITAL DO CLÃ</p></legend>
+<p><label>Qual o nivel do capitolio: </label><select><optgroup label="Niveis">
+<option >1</option>
+<option >2</option>
+<option >3</option>
+<option >4</option>
+<option >5</option>
+<option >6</option>
+<option >7</option>
 </optgroup></select></p>
+
+<p><label>Qual a liga: </label><select><optgroup label="Ligas">
+    <option >Sem posicao</option>
+    <option >Bronze</option>
+    <option >Prata</option>
+    <option >Ouro</option>
+    <option >Cristal</option>
+    <option >Mestre</option>
+    <option >Campiao</option>
+    <option >Tita</option>
+    <option >Lendaria</option>
+    </optgroup></select></p></p>
+
 </fieldset>
+</footer>
+
 </form>
 
-<button id="button" onclick="btt()">salvar</button>
+<button id="button" class="btnBotao"onclick="btt()">SALVAR</button>
 
 </main>
+<script src="javaScript.js"></script>
 </body>
 </html>
