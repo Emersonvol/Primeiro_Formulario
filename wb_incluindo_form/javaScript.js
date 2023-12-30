@@ -1,5 +1,5 @@
 (function btt(){
-  const alerta = document.querySelector('.btnBotao');
+  const alerta = document.querySelector('.btn__Botao');
   alerta.addEventListener('click', e =>{
   alert('Perfil Salvo !!!');
   location.reload() 
@@ -16,12 +16,12 @@ saida.innerHTML = quantosMembros.value
 
 
 const qtdTrofeus = document.querySelector('#nvTrofeus')
-qtdTrofeus.addEventListener("input", e =>{
-saida2 = document.querySelector('.saida2');
+qtdTrofeus.addEventListener("input", (e) =>{
+saida2 = document.querySelector('.sobre__cla__trofeus');
 saida2.innerHTML = qtdTrofeus.value
 },false)
 
-const tagSelecionadas = document.querySelector('input[name="gcla"]:checked').value
+const tagSelecionadas = document.querySelector('input[name="gcla"]:checked')
 
 
 
