@@ -1,86 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&family=Teko:wght@600&display=swap');
+
 *{
 margin: 0;
 padding: 0;
+
 }
 :root{
-    --cores:#070757;
-    --fundo:#8ac6dc;
-    --texto:center;
-    --tamanho: 50em;
-    --borda:10px;
-    --bordaFild:1px solid black;
+    --corPrimaria:#1A0205;
 }
-.exp-jogador ,.scClas,.cpEspecificoes{
-text-align: var(--texto);
-background-color: var(--fundo);
-width: var(--tamanho);
-margin-left:33em;
-margin-top:.2em;
-border-radius:var(--borda);
+body{
+    width: 100vh;
+    height: 100vh;
+    margin: 1% 28%;
+    background-color: #413f3f;
+   
 }
-.scClas{
-    background-color: #a4e5e8;
-    }
-    .cpEspecificoes{
-    background-color: #dce8a4;
-
-    }
-.exp-jogador p , .scClas p,.cpEspecificoes p{
-    text-align: left;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.5em;
+.apresentacao{
+   font-family: 'Teko', sans-serif;
+   display: flex;
+   gap:30px; 
+   flex-wrap: wrap;
+   border: 1px solid #000;
+   border-radius: 15px; 
+   padding:5%;
+   background-color: var(--corPrimaria);
+   
 }
-.exp-jogador h1 {
-   font-family: 'Fasthand', cursive; 
-   font-size: 5em;
-   color: var(--cores)
+.apresentacao h2, h1{
+    color:#F03AB9;
 }
-legend{
-    color: #fd064c;
-    border: var( --bordaFild);
-    border-radius:var(--borda);
+.apresentacao p ,label{
+color: #FFF;
 }
-fieldset{
-    border: var( --bordaFild);
-    border-radius:var(--borda);
-
+.sobre__cla{
+    margin-top: 3rem;
 }
-textarea{
-    position: absolute;
-    
-}
-.radioSiNO{
-    position: relative;
-    top:-1.2em;
-    right: 10.5em;
-    font-size: 1.4em;
-    color: #0654fd;
-}
-
-.btnBotao{
-    position: relative;
-    width: 400px;
-    height:50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 30px;
-    color: #fefefe;
-    background-color: #2c48e8;
-    left: 25em;
-    font-family: 'Playfair Display', serif;
+.btn__Botao{
+    width: 12rem;
+    height: 4rem;
+    margin:13.75rem 0 0 13.75rem;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    background-color:#FF3DF5;
+    cursor: pointer;
+    color: #FFF;
     border: none;
     border-radius: 10px;
-    transition: .5s;
+    transition: all .5s;
 }
-.btnBotao:hover{
-    background-color: #919ee5;
-    cursor: pointer;
 
+.btn__Botao:hover{
+    background-color:#cc43c5;
+    box-shadow: 1px 1px 10px #fff;
 }
-.btnBotao:active{
-    background-color: #38f604;
-    cursor: pointer;
-}
+
